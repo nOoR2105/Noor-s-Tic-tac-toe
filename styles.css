@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top {
+    font-family: cursive;
+    margin: 0;
+    background-color: #030742;
+    padding: 10px 0 10px 0;
+    color: gold;
+    text-shadow: #FC0 5px 0 10px;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    background-color: #2D0080;
+}
+
+h1 {
+    font-size: 333%;
+    margin-top: 0;
+}
+
+h2 
+{
+    margin-top: 1.5rem;
+    font-family: cursive;
+}
+
+
+
+h3 {
+    font-size: 222%;
+    margin-bottom: 0;
+}
+
+a 
+{
+    color: #FC0;
+    position: relative;
+    top: 11rem;
+    background-color: #FC0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+    font-family: cursive;
+}
+
+a:hover 
+{
+    background-color: var(--clr);
+    letter-spacing: 0.2rem;
+    box-shadow: 0 0 35px var(--clr);
+}
+
+a::before
+{
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #030742;
+}
+
+a span
+{
+    position: relative;
+    z-index: 1;
+
+}
+
+a i 
+{
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+a i::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 80%;
+    width: 10px;
+    height: 4px;
+    background-color: #2D0080;
+    transform: translate(-50%) skewX(325deg);
+    transition: 0.5s;
+
+}
+
+a:hover i::before
+{
+    width: 20px;
+    left: 20%;
+}
+
+a i::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10px;
+    height: 4px;
+    background-color: #2D0080;
+    transform: translate(-50%) skewX();
+    transition: 0.5s;
+
+}
+
+a:hover i::after
+{
+    width: 20px;
+    left: 80%;
+}
+
+
+
+
+
+
+.big
+{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.game
+{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0vmin 2vmin;
+
+}
+
+.box
+{
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    box-shadow: 0 0 1rem rgb(255, 0, 0);
+    font-size: 8vmin;
+    border-radius: 1rem;
+    background-color: #030742;
+    color: gold;
+    text-shadow: 0 0 1rem #FC0;
+}
+
+.box:hover
+{
+    box-shadow: 0 0 1rem #FC0;
+    transition: 0.5s;
+}
+
+#reset
+{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    margin-bottom: 1rem;
+}
+
+.end
+{
+    height: 33%;
+    width:40%;
+    padding: 5px;
+    color: gold;
+    text-shadow: 0 0 1rem #FC0;
+    background-color: #030742;
+    box-shadow:0 0 1rem #FC0;
+    border: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    left: 30%;
+    line-height: 0;
+}
+
+#chance
+{
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: gold;
+    text-shadow: 0 0 1rem #FC0;
+}
