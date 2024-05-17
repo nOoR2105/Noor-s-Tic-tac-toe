@@ -44,6 +44,8 @@ boxes.forEach((box) =>{
 
 const draw = () => {
     modal.showModal();
+
+    chance.innerText = 'GAME OVER';
         
     msg.innerText = 'GAME IS DRAW';
 }
